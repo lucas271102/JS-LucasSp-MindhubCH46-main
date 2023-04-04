@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+margin: 0;
+box-sizing: border-box;}
+body{
+    background-color: floralwhite!important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar{
+    display: flex;
+    
+    background-color: floralwhite;
+}
+.logo{
+    width: 9rem;
+}
+.navbar > a{
+    text-decoration: none;
+    color: crimson;
+    padding: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    background-color: blanchedalmond;
+}
+.card {
+    display: flex;
+    background-color: blanchedalmond!important;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    border: 1px solid black!important;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 60%;
+    padding: 0.5rem;
+    object-fit: cover;
+  }
+  
+  
+
+
+    
+    
+    
+
+button{
+    background-color: floralwhite;
+    color: crimson;
+    padding: 0.5rem;
+    border-radius: 6px!important;
+    margin-bottom: 14px!important;
+    border-color: crimson;
+    
+}
+
+button > a{
+    text-decoration: none;
+    color: crimson;
+}
+footer{
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: blanchedalmond;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#submit{
+    color: crimson;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu-check{
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+.custom-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table{
+   padding: 7rem!important;
+ 
+    
+    width: 100%!important;
+}
+table, th, tr,td{
+    border: 1px solid black!important;
+}
+th{
+    background-color: blanchedalmond!important;
+}
+
+  
+  
+/*MEDIA QUERIES*/
+@media  screen and (min-width:320px)and (max-width:767px){
+    .navbar{
+        flex-direction: column;
+        
+    }
+    .navbar > a{
+        background: none;
+    }
+    .card{
+        flex-direction: column;
+        width: 100%!important;
+    }
+    .menu-check{
+        flex-direction: column;
+        width: 90%;
+        padding: 1rem;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 768px)and (max-width: 1024px){
+    .card{
+        width: 35%!important;
+    }
+}
