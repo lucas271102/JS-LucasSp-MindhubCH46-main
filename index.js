@@ -1,13 +1,40 @@
 const indexContainer = document.getElementById('card-group-event')
-
+const checkContainer= document.getElementById('menu')
+const searchCategory= document.getElementById('search-js')
 const eventos = data.eventos
+const evento = eventos
 
-const evento = eventos[3]
 
+
+/*checkbox de categoría según evento*/
+
+const categories = eventos.map(evento=> evento.category)
+
+
+
+const setCategory= new Set(categories)
+
+const arrayCategories = Array.from(setCategory)
+
+showCategories(arrayCategories, checkContainer)
+function showCategories(categories, checkContainer){
+  let showTemp=""
+
+  for(let category of categories){
+    
+    showTemp+=`<label for="${category}">${category}</label>
+    <input type="checkbox" name="" id="" value=${category}>`
+}
+checkContainer.innerHTML += showTemp
+}
+
+
+/*cards de eventos*/
  let template = ''
 
  for (let evento of eventos){
     template += createCard(evento)
+   
  }
  indexContainer.innerHTML = template
 function createCard(evento){
@@ -19,7 +46,7 @@ function createCard(evento){
      </div>
      <div class="detail-btn">
        <h6>Price:${evento.price}</h6>
-       <button><a href="./details.html">Details</a></button>
+       <button><a href="./details.html?id=${evento.name}">Details</a></button>
      </div>
      </div>`
 }
