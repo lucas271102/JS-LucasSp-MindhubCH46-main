@@ -15,13 +15,13 @@ function showEvent(evento){
   
    template=  `<div class="row g-0">
    <div class="col-md-4">
-     <img src=${evento.image} class="img-fluid rounded-start" alt="..." style="height: 500px; width: 100%;">
+     <img src=${evento.image} class="img-fluid rounded-start" alt="..." style="height: 400px; width: 100%;">
    </div>
-   <div class="col-md-8">
+   <div class="col-md-3">
      <div class="card-body">
-       <h5 class=${evento.name} style="font-size: xx-large;">Festival of collectivities </h5>
+       <h5 class=detail-title style="font-size: xx-large; ">${evento.name} </h5>
        <p class="card-text" style="font-size: xx-large;">${evento.description}</p>
-       <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+       
        <ul>
        <li>´"Date":${evento.date}</li>
        <li>´"Capacity":${evento.capacity}</li>

@@ -26,7 +26,7 @@ function createCard(evento){
   </div>
   <div class="detail-btn">
     <h6>Price - ${evento.price}</h6>
-    <button>Details</button>
+    <button><a href="./details.html?id=${evento.name}">Details</a></button>
   </div>
   <div class="card-footer">
     <small class="text-body-secondary">Last updated 3 mins ago</small>

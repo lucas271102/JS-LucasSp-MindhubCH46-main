@@ -1,6 +1,7 @@
 const indexContainer = document.getElementById('card-group-event')
-const checkContainer= document.getElementById('menu')
+const checkContainer= document.getElementById('menu-checkbox')
 const searchCategory= document.getElementById('search-js')
+const selectCategory= document.getElementById('select-js')
 const eventos = data.eventos
 const evento = eventos
 
@@ -16,6 +17,15 @@ const setCategory= new Set(categories)
 
 const arrayCategories = Array.from(setCategory)
 
+console.log(arrayCategories)
+checkContainer.addEventListener('change',()=>{
+  const selectedCategories=Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(check=>check.value)
+
+   indexContainer.innerHTML=selectedCategories
+  
+})
+
+
 showCategories(arrayCategories, checkContainer)
 function showCategories(categories, checkContainer){
   let showTemp=""
@@ -23,10 +33,12 @@ function showCategories(categories, checkContainer){
   for(let category of categories){
     
     showTemp+=`<label for="${category}">${category}</label>
-    <input type="checkbox" name="" id="" value=${category}>`
+    <input type="checkbox" name="category" id="" value=${category}>`
 }
 checkContainer.innerHTML += showTemp
+
 }
+
 
 
 /*cards de eventos*/

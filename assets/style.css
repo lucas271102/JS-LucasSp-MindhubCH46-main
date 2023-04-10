@@ -80,9 +80,10 @@ footer{
     background-color: blanchedalmond;
 }
 .icons{
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
+    margin-left: 10px;
+    display: flex!important;
+    justify-content: space-between!important;
+    
     
 }
 form{
@@ -104,11 +105,12 @@ form{
     
     
 }
-.custom-card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#detail-cards{
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
 }
+
 table{
    padding: 7rem!important;
  
@@ -142,6 +144,21 @@ th{
         width: 90%;
         padding: 1rem;
         align-items: center;
+    }
+    #detail-cards{
+        width: 92%!important;
+        height: 700px!important;
+    }
+    .card-text{
+        font-size: medium!important;
+    }
+    #detail-cards > img{
+        padding: 2rem!important;
+        width: 15%!important;
+        height: 50px!important;
+    }
+    .detail-title{
+        font-size: medium!important;
     }
 }
 @media screen and (min-width: 768px)and (max-width: 1024px){
