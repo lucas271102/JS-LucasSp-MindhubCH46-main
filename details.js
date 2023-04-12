@@ -1,11 +1,18 @@
 let searchParams=location.search
+
 console.log(searchParams)
+
 let params =new URLSearchParams(searchParams)
+
 let name =params.get('id')
+
 const showContainer= document.getElementById('detail-cards')
 
 const eventos= data.eventos
+
+
 const evento= eventos
+
 let foundEvent = eventos.find(evento=> evento.name == name)
 
 
