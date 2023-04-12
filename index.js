@@ -5,10 +5,25 @@ const searchCategory= document.getElementById('search-js')
 const eventos = data.eventos
 const evento = eventos
 
- let  amazingEvents;
+ let  events;
 fetch ('https://mindhub-xj03.onrender.com/api/amazing')
 .then(data => data.json())
-.then(res => amazingEvents= res)
+.then(res =>{
+  events = res
+  createCheckbox(events)
+})
+  .catch(err=> console.log(err))
+  
+
+
+
+
+  function createCheckbox(events, container){
+    let fn =events => events.category
+    let categories = new Set (events.filter(fn).map(fn))
+    console.log(categories)
+  }
+
 /*checkbox de categoría según evento*/
 
 const categories = eventos.map(evento=> evento.category)
@@ -18,8 +33,10 @@ const categories = eventos.map(evento=> evento.category)
 const setCategory= new Set(categories)
 
 const arrayCategories = Array.from(setCategory)
-let checkedCategories= []
-console.log(arrayCategories)
+
+
+
+
 checkContainer.addEventListener('change',()=>{
   const selectedCategories=Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(check=>check.value)
   
