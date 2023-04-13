@@ -8,11 +8,17 @@ body{
 }
 .navbar{
     display: flex;
-    
+    box-shadow: 5px 5px 5px black;
     background-color: floralwhite;
 }
 .logo{
     width: 9rem;
+}
+.navbar > a:hover{
+    transition: all 3s;
+    border: 1px solid crimson;
+    color: white;
+    background-color: black;
 }
 .navbar > a{
     text-decoration: none;
@@ -29,6 +35,7 @@ h1{
     align-items: center;
     padding: 3rem;
     background-color: blanchedalmond;
+    box-shadow: 10px 5px 5px grey;
 }
 .card {
     display: flex;
@@ -39,6 +46,7 @@ h1{
     height: 400px;
     margin: 20px;
     border: 1px solid black!important;
+    box-shadow: 10px 5px 5px grey;
   }
   
   .card img {
@@ -71,7 +79,7 @@ button > a{
 }
 footer{
     display: flex;
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -112,18 +120,32 @@ form{
 }
 
 table{
-   padding: 7rem!important;
+   padding: 2rem!important;
  
+ justify-content: center;
     
-    width: 100%!important;
+    width: 50%!important;
 }
 table, th, tr,td{
-    border: 1px solid black!important;
+    padding: 0.5rem!important;
+    border: 1px solid crimson!important;
+    
 }
 th{
     background-color: blanchedalmond!important;
 }
-
+.caption{
+    justify-content: center;
+    align-items: center;
+}
+.table-three, .table-two, .table-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+}
   
   
 /*MEDIA QUERIES*/

@@ -35,12 +35,11 @@ function showEvent(event){
      <div class="card-body">
        <h5 class=detail-title style="font-size: xx-large; ">${event.name} </h5>
        <p class="card-text" style="font-size: xx-large;">${event.description}</p>
-       
-       <ul>
-       <li>´"Date":${event.date}</li>
-       <li>´"Capacity":${event.capacity}</li>
-       <li>´"Place":${event.place}</li>
-       <li>´"Price":${event.price}</li>
+        <ul>
+       <li>´Date:${event.date}</li>
+       <li>´Capacity:${event.capacity}</li>
+       <li>´Place:${event.place}</li>
+       <li>´Price:${event.price}</li>
        </ul>
      </div>
    </div>
