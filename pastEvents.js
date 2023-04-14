@@ -28,7 +28,7 @@ fetch ('https://mindhub-xj03.onrender.com/api/amazing')
   </label>
   `
  })
-    console.log(categories)
+    
   }
 
   

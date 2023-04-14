@@ -45,7 +45,7 @@ function createStat(events, eventStatistics) {
   eventStatistics.innerHTML = `
         <td>${highPercentage.name} ${percentageA.toFixed(2)}%</td>
         <td>${events[0].name} ${percentageB.toFixed(2)}%</td>
-        <td>${events[11].name}</td>`
+        <td>${events[11].name}${events[11].capacity}</td>`
 
 }
 function createCategory(events, upcomingTable, pastTable) {
@@ -91,7 +91,7 @@ if(revenue ){
   upcomingTable.innerHTML += `
   <tr>
   <td>${category}</td>
-  <td>${revenue}</td>
+  <td>$ ${revenue}</td>
   <td>${(percentageTwo/contadorDos).toFixed(2)}%</td>
 </tr>   
 
@@ -102,7 +102,7 @@ if (revenueDos){
   pastTable.innerHTML+=`
   <tr>
     <td>${category}</td>
-    <td>${revenueDos}</td>
+    <td> $ ${revenueDos}</td>
     <td>${(percentageOne/contadorUno).toFixed(2)}%</td>
   </tr
   `
