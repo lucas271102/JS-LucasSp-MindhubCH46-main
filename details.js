@@ -14,6 +14,7 @@ fetch ('https://mindhub-xj03.onrender.com/api/amazing')
 .then(res =>{
   events = res.events.filter(event=> event.category)
 let foundEvent = events.find(events=> events.name == name)
+
   showEvent(foundEvent)
   
 })

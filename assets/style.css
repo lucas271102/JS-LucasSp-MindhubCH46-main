@@ -196,6 +196,7 @@ caption{
         padding: 2rem!important;
         width: 15%!important;
         height: 50px!important;
+        object-fit: cover!important;
     }
     .detail-title{
         font-size: medium!important;
